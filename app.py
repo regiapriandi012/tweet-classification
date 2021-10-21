@@ -11,8 +11,7 @@ def result():
     import pandas as pd
     import urllib
 
-    CONNECTION_STRING = "mongodb+srv://regiapriandi012:" + urllib.parse.quote(
-        "@Sinheul24.") + "@cluster0.4ti9q.mongodb.net/database0?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE"
+    CONNECTION_STRING = "mongodb+srv://regiapriandi012:" + urllib.parse.quote("@Sinheul24.") + "@cluster0.4ti9q.mongodb.net/database0?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE"
 
     client = pymongo.MongoClient(CONNECTION_STRING)
     db = client.database0
@@ -38,7 +37,7 @@ def result():
 
     from sklearn.feature_extraction.text import CountVectorizer
 
-    counter = CountVectorizer()
+    counter = CountVectorizer(lowercase=False)
     counter.fit(train_data, train_labels)
 
     train_counts = counter.transform(train_data)
