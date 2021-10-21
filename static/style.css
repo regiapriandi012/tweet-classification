@@ -1,0 +1,42 @@
+body {
+    background-image: url("https://actconsulting.co/wp-content/uploads/2020/01/Memahami-Artificial-Intelligence-Secara-Mudah.jpg");
+    background-size: 100%;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    padding-top: 15px;
+    width: 500px;
+    height: 280px;
+    border-radius: 30px;
+    background-color: #09b1da;
+    margin: 0 auto;
+    border-top: 100px;
+}
+
+.container0 {
+    padding-top: 10px;
+    width: 500px;
+    height: 180px;
+    border-radius: 30px;
+    background-color: #09b1da;
+    margin: 0 auto;
+    border-top: 100px;
+}
+
+form {
+    text-align: center;
+}
+
+.submit {
+    background-color: #1b6d85;
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}

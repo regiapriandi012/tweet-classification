@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Klasifikasi Tweet Ecommerce
+        </title>
+        <link href="{{url_for('static', filename='style.css')}}" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <br>
+        <div class="container0">
+            <h2>Klasifikasi Tweet Ecommerce Di Indonesia</h2>
+            <h2>Dengan Penerapan Machine Learning</h2>
+            <h2>Naive Bayes Classification</h2>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <form action="/" method="post">
+                <label for="tweet">Silahkan Masukan Tweet: </label><br>
+                <textarea id="tweet" name="inputan" rows="4" cols="30"></textarea><br>
+                <input class="submit" type="submit" name="submit" value="Submit">
+                <br>
+                <p>Tweet: </p>
+                <p>{{tweet}}</p>
+                <p>Tweet ini mengenai ecommerce: </p>
+                <p>{{hasil}}</p>
+            </form>
+        </div>
+    </body>
+</html>
