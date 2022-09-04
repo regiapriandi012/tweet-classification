@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request
+#import pymongo
+import pandas as pd
+#import urllib
 app = Flask(__name__)
 
 @app.route("/")
@@ -7,14 +10,13 @@ def home():
 
 @app.route("/", methods=['POST', 'GET'])
 def result():
-    import pymongo
-    import pandas as pd
-    import urllib
 
-    CONNECTION_STRING = "<database uri>"
+    #CONNECTION_STRING = "<database uri>"
 
-    client = pymongo.MongoClient(CONNECTION_STRING)
-    db = client.database0
+    #client = pymongo.MongoClient(CONNECTION_STRING)
+    #db = client.database0
+
+    db = pd.read_json('dataset_url')
 
     blibli = pd.DataFrame(list(db['blibli'].find()))
     tokopedia = pd.DataFrame(list(db['tokopedia'].find()))
