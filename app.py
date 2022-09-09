@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-#import pymongo
 import pandas as pd
 #import urllib
 app = Flask(__name__)
@@ -10,19 +9,11 @@ def home():
 
 @app.route("/", methods=['POST', 'GET'])
 def result():
-
-    #CONNECTION_STRING = "<database uri>"
-
-    #client = pymongo.MongoClient(CONNECTION_STRING)
-    #db = client.database0
-
-    db = pd.read_json('dataset_url')
-
-    blibli = pd.DataFrame(list(db['blibli'].find()))
-    tokopedia = pd.DataFrame(list(db['tokopedia'].find()))
-    shopee = pd.DataFrame(list(db['shopee'].find()))
-    lazada = pd.DataFrame(list(db['lazada'].find()))
-    bukalapak = pd.DataFrame(list(db['bukalapak'].find()))
+    blibli = pd.read_json('<path-to-file>') # Dataset dapat diakses di https://www.kaggle.com/regiapriandi/ecommerce-tweet-classification-indonesia/data
+    tokopedia = pd.read_json('<path-to-file>')
+    shopee = pd.read_json('<path-to-file>')
+    lazada = pd.read_json('<path-to-file>')
+    bukalapak = pd.read_json('<path-to-file>')
 
     bukalapak_tweet = bukalapak["tweet"].tolist()
     tokopedia_tweet = tokopedia["tweet"].tolist()
