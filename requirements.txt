@@ -1,6 +1,5 @@
 flask
 sklearn
 pandas
-pymongo
 dnspython
 urllib3
