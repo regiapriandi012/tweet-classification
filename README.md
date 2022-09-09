@@ -5,9 +5,11 @@
 
 ## Instalation
 ```
-  cd Tweet-Classification-Flask
-  source bin/activate
-  flask run
+cd tweet-classification-flask
+python3 -m venv venv  
+venv\Scripts\activate  
+pip install -r requirements.txt  
+flask run
 ```
 ### Running on Docker
 ![2021-10-20 (1)](https://user-images.githubusercontent.com/69528812/188311465-49aeb6cf-4981-4cb1-9d8f-486b796e13e2.png)
