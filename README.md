@@ -1,3 +1,7 @@
+![](https://github.com/regiapriandi012/tweet-classification-flask/actions/workflows/codeql.yml/badge.svg)
+![](https://github.com/regiapriandi012/tweet-classification-flask/actions/workflows/dependency-review.yml/badge.svg)
+![](https://github.com/regiapriandi012/tweet-classification-flask/actions/workflows/docker-image.yml/badge.svg)
+
 # Indonesia Ecommerce Tweet Classification
 ##### Aplikasi berbasis Web yang dibangun menggunakan bahasa pemrograman python dengan framework flask, algoritma yang digunakan yaitu Naive Bayes Classifier
 ##### Dataset dapat diakses di https://www.kaggle.com/regiapriandi/ecommerce-tweet-classification-indonesia/data
